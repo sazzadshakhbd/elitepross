@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section>
+            <h2>Please Fill Up The Form</h2>
+            <form>
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name" required><br><br>
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email" required><br><br>
+                <label for="phone">Your Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone Number" required><br><br>
+                <fieldset>
+                    <legend>Pick One Topics</legend>
+                    <label for="html">
+                        <input type="radio" id="html" name="topic" value="HTML" required> HTML
+                    </label><br>
+                    <label for="css">
+                        <input type="radio" id="css" name="topic" value="CSS"> CSS
+                    </label><br>
+                    <label for="js">
+                        <input type="radio" id="js" name="topic" value="JavaScript"> JavaScript
+                    </label><br>
+                    <label for="php">
+                        <input type="radio" id="php" name="topic" value="PHP"> PHP
+                    </label><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pick One Topics</legend>
+                    <label for="python">
+                        <input type="checkbox" id="python" name="topic" value="Python"> Python
+                    </label><br>
+                    <label for="java">
+                        <input type="checkbox" id="java" name="topic" value="Java"> Java
+                    </label><br>
+                    <label for="node">
+                        <input type="checkbox" id="node" name="topic" value="Node"> Node
+                    </label><br>
+                    <label for="vue">
+                        <input type="checkbox" id="vue" name="topic" value="Vue"> Vue
+                    </label><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Special Instruction</legend>
+                    <label for="special-instruction">Comments</label><br>
+                    <textarea id="special-instruction" name="special-instruction" rows="4" cols="50" placeholder="Enter Your Special Instruction"></textarea><br><br>
+                </fieldset><br>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
