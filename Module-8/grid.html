@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Layout</title>
     <style>
-        body {
-            font-size: 20px;
-        }
-        .container  {
+        .container{
             display: grid;
-            /* grid-template-columns: 300px 300px 300px 300px; */
-            /* grid-template-columns: repeat(2, 300px) 200px 100px; */
-            /* grid-template-columns: repeat(3, 1fr) 3fr; */
-            /* grid-template-columns: 100px 100px auto 100px; */
-            /* grid-template-columns: 100px 100px 100px; */
-            /* justify-content: center; */
-            /* justify-content: space-around; */
+            /* grid-template-columns: 200px 200px 200px 200px 200px; 
+            */
+            /* grid-template-columns: 100px 200px 400px 200px 200px;  */
+           
+            /* grid-template-columns: repeat(2, 100px) 200px 150px; */
+            /* grid-template-columns: repeat(6, 1fr) 2fr; */
+            grid-template-columns: 100px 200px 200px ;
+            justify-content: space-around;
+
         }
-        .item {
-            border: 2px solid tomato;
+        .item{
+            border: 1px solid aquamarine;
         }
     </style>
 </head>
-
 <body>
-    <h2>Explore Grid Layout</h2>
+    <h2>Explore Grid Layout: 2D layout</h2>
+
     <div class="container">
         <div class="item">item - 1</div>
         <div class="item">item - 2</div>
@@ -50,5 +48,4 @@
         <div class="item">item - 20</div>
     </div>
 </body>
-
 </html>
